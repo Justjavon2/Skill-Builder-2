@@ -7,14 +7,50 @@
  * @author (You)
  * @version (0.1)
  */
+
 public class PowerPill
 {
-    // TODO - replace this line with instruction from step 1
-
+    static int DEFAULT_POWER= 10;
     // instance variables
-    // TODO - replace this line with instruction from step 2
-    // TODO - replace this line with instruction from step 3
+    private String name;
+    private int power;
+    /**
+     \* Initializes this power pill to a default power value
+     \* and sets the name of the pill to name.
+     \* @param name the name of this power pill.
+     */
 
+    public PowerPill(String name){
+        setName(name);
+        power=DEFAULT_POWER;
+    }
+
+    public PowerPill(String name, int power){
+        setName(name);
+        setPower(power);
+    }
+     public String getName(){
+        return name;
+    }
+     public void setPower(int power) {
+        this.power = power;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getPower(){
+        return power;
+    }
+
+    public String toString(){
+        return "PowerPill " + name + " = " + power;
+
+    }
+
+
+    ////  second half of questions
     // constructors
 
     // TODO - replace this line with instruction from step 4
